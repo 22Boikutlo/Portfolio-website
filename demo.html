@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" href="./android-chrome-192x192.png">
+    <style>
+       /* styles.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background: #575757;
+    border-radius: 4px;
+}
+
+/* Form */
+form {
+    display: flex;
+    gap: 5px;
+}
+
+input[type="search"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 5px 10px;
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Headings and Text */
+h1, h2, h3 {
+    color: #333;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+/* Articles */
+article {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+article h2 {
+    margin-top: 0;
+}
+
+/* Skills and Projects Section */
+.skills-projects {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.skills-block {
+    background: white;
+    padding: 20px;
+    margin: 10px;
+    flex: 1;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.project-block {
+    background: white;
+    padding: 20px;
+    margin: 10px;
+    flex: 1 1 calc(30% - 20px);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    form {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .skills-projects {
+        flex-direction: column;
+    }
+
+    .project-container {
+        flex-direction: column;
+    }
+
+    .project-block {
+        flex: 1 1 100%;
+    }
+
+    </style>
+</head>
+<body>
+    <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./About.html">About</a></li>
+                <li><a href="./Contact.html">Contact Information</a></li>
+                <li><a href="./Skills.html">Skills</a></li>
+                <li><a href="./Project.html">Projects</a></li>
+            </ul>
+            <form action="/search" method="GET">
+                <input type="search" name="query" placeholder="Search">
+                <button type="submit">Search</button>
+            </form>
+        </nav>
+    </header>
+
+    <img src="images/download.png" alt="Boikhulu Rampora" />
+
+    <h1>Welcome to Bohloko Rampora's Portfolio</h1>
+    <h2>Hello, my name is Rampora Boikhulu. I am a final year Computer Information Systems student at the University of Free State, Bloemfontein main campus. I am passionate about building software products and learning new technologies and frameworks.</h2>
+    
+    <h3>Don't be surprised if there is nothing, just refresh the page.</h3>
+    
+    <article id="About">
+        <h2>About</h2>
+        <p>Welcome to my portfolio. Here you will find all the projects I have worked on, compartmentalized based on team and individual projects and ordered by date.</p>
+    </article>
+    
+    <article id="Contact">
+        <h2>Contact Information</h2>
+        <ul>
+            <li>Cellphone Number: 072 873 5988</li>
+            <li>Email: boikutlos@gmail.com</li>
+            <li><a href="https://www.linkedin.com/in/boilikom-shaun-rampora-7b7914167">LinkedIn</a></li>
+        </ul>         
+    </article>
+
+    <section class="skills-projects">
+        <article id="Skills">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <section class="skills-block">
+                    <h3>Languages and Skills</h3>
+                    <ul>
+                        <li>C#</li>
+                        <li>HTML5, CSS3, BOOTSTRAP</li>
+                        <li>Visual Basics For Applications</li>
+                        <li>Git & GitHub</li>
+                        <li>SQL Databases</li>
+                        <li>Static Web Design</li>
+                        <li>Website Deployment</li>
+                    </ul>
+                </section>
+                <section class="skills-block">
+                    <h3>Platforms</h3>
+                    <ul>
+                        <li>Visual Studio</li>
+                        <li>Visual Studio Code</li>
+                        <li>SQL Server Management Studio</li>
+                        <li>Figma</li>
+                        <li>Notepad++</li>
+                    </ul>            
+                </section>
+            </div>
+        </article>
+
+        <article id="Projects">
+            <h2>Projects</h2>    
+            <div class="project-container">
+                <div class="project-block">
+                    <h3>Portfolio Website</h3>
+                    <p>A personal portfolio website to showcase my projects and skills.</p>
+                    <a href="https://github.com/22Boihugu/Portfolio-website">View on GitHub</a>
+                </div>
+                <div class="project-block">
+                    <h3>Student Accommodation Application System</h3>
+                    <p>The system pairs students based on the relativity of courses and year of study.</p>
+                    <a href="#">View on GitHub</a>
+                </div>
+                <div class="project-block">
+                    <h3>Community Project</h3>
+                    <p>An online application system that allows students to supply info once and apply to all universities in South Africa.</p>
+                    <a href="#">View on GitHub</a>
+                </div>
+            </div>
+        </article>
+    </section>
+    
+    <footer>
+        <ul>
+            <li><a href="./index.html">Go back to Home</a></li>
+            <li><a href="./About.html">View About Boitsoq</a></li>
+            <li><a href="./Contact.html">Contact Information</a></li>
+            <li><a href="./Skills.html">These are some of my skills</a></li>
+            <li><a href="./Project.html">View my Projects</a></li>
+        </ul>
+        &copy; 2024 Boikho Networks
+    </footer>
+</body>
+</html>
