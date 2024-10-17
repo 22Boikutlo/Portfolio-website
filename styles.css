@@ -44,6 +44,11 @@ nav ul li a:hover
     background: #575757;
     border-radius: 4px;
 }
+nav ul li a:active 
+{
+    background: #c7c1c1;
+    border-radius: 4px;
+}
 /*nav {color:crimson;
     display: flex;
     gap: 10em;
@@ -123,32 +128,65 @@ ul
     list-style-type: disc;
     padding-left: 20px;
 }
-
-.project-item 
+.Intro-block 
 {
-    margin-bottom: 20px;
-}
-
-.project-item a 
-{
-    color: #007BFF;
-    text-decoration: none;
-}
-
-.project-item a:hover 
-{
-    text-decoration: underline;
-}
-.experience-container {
     display: flex;
     justify-content: space-between;
     gap: 20px;
 }
 
-.experience-item {
+.Intro-item 
+{
     flex: 1;
 }
-.skills-container {
+.Skills-block 
+{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    
+    margin: 20px 0;
+}
+
+.Skills-item 
+{
+    flex: 1;
+}
+
+.Project-item 
+{
+    margin-bottom: 20px;
+}
+
+.Project-item a 
+{
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.Project-item a:hover 
+{
+    text-decoration: underline;
+}
+.Project-block 
+{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.experience-block 
+{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.experience-item 
+{
+    flex: 1;
+}
+.Skills-block 
+{
     display: flex;
     justify-content: space-between;
     gap: 20px;
@@ -156,12 +194,14 @@ ul
     margin: 20px 0;
 }
 
-.skills-item {
+.Skills-item 
+{
     flex: 1;
 }
 
 /* Footer */
-footer {
+footer 
+{
     background: #333;
     color: #fff;
     text-align: center;
@@ -171,17 +211,20 @@ footer {
     width: 100%;
 }
 
-footer ul {
+footer ul 
+{
     list-style: none;
     padding: 0;
 }
 
-footer ul li {
+footer ul li 
+{
     display: inline;
     margin: 0 10px;
 }
 
-footer ul li a {
+footer ul li a 
+{
     color: #fff;
     text-decoration: none;
 }
