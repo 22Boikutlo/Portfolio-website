@@ -1,136 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boikutlo Rampora Portfolio</title>
-    <link rel= "stylesheet" href= "./styles.css">
-    <link rel="icon" href="./android-chrome-192x192.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boikutlo Rampora Portfolio</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="./android-chrome-192x192.png">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href= "#index.html"> Home</a></li>
-                <li><a href= "#About"> About</a></li>
-                <li><a href= "#Contact"> Contact Information</a></li>
-                <li><a href= "#Skills"> Skills</a></li>
-                <li><a href= "#Project"> Projects</a></li>
-                <li><a href="#Experience">Experience</a></li>
-            </ul>
-            <form action="/search" method="GET">
-                <input type="search" name="query" placeholder="Search">
-                <button type="submit">Search</button>
-            </form>
-        </nav>
-    </header>
+
+  <!-- Search Bar -->
+  <div class="nav">
+    <div class="navTop">
+      <form action="/search" method="GET">
+        <input type="search" id="searchInput" name="query" placeholder="Search">
+        <button type="submit">Search</button>
+      </form>    
+    </div>
+  </div>
+
+  <!-- Header & Navigation -->
+  <header>
+    <nav>
+      <ul class="unOrderedList">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Contact">Contact Information</a></li>
+        <li><a href="#Skills">Skills</a></li>
+        <li><a href="#Project">Projects</a></li>
+        <li><a href="#Experience">Experience</a></li>
+      </ul>
+      <!-- Hamburger Menu Icon -->
+      <div class="hamburger" id="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </nav>
+  </header>
     
-    <article id = "Intro">
-        <img src="images/download.png" alt="Boikutlo" />
-        <h1> Welcome to BS Rampora's portfolio</h1>
-        <h4>Hello, My name is Rampora Boikutlo. I am a final year Computer Information Systems Student at the University of Free State, Bloemfontein main campus. I am very passionate about building software products and learning new technologies and frameworks.</h4>
-    </article>
+  <!-- Profile Section -->
+  <article id="Profile">
+    <h1>Rampora Shaun Boikutlo</h1>
+    <img src="images/ProfilePicture.jpeg" width="200" height="200" alt="Boikutlo" class="logo">
+    <h2>Bachelor of Computer Information Systems</h2>
+    <h3>University of Free State</h3>
+    <h4>Software Developer and Digital Marketer</h4>
+    <meta name="description" content="I am passionate about building software products and learning new technologies and frameworks.">
+  </article>
 
-    <article id = "About-block">
-        <h2>About</h2>      
-        <p>Welcome to my portfolio, here you will find all the project I have worked on. Compartmentalized based on team and individual projects and ordered by date.</p>
-    </article>
-        
-    <article id = "Contact">
-       <h2>Contact Information</h2>
-        <ul>
-            <li>Cellphone Number: 072 873 5988</li>
-            <li>Email: boikutlos@gmail.com</li>
-            <li><a href="https://www.linkedin.com/in/boikutlo-shaun-rampora-7b7914167">LinkedIn</a></li>
-       </ul>         
-    </article>
+  <!-- About Section -->
+  <article id="About">
+    <h2>About</h2>
+    <p>Welcome to my portfolio! Here, you'll find all the projects I have worked on. 
+       Projects are categorized based on team and individual projects and are ordered by date.</p>
+    <p>Hi, I'm Boikutlo Shaun Rampora, a Computer Information Systems graduate from the University of the Free State. 
+       I enjoy learning new technologies and building software solutions. 
+       My goal is to use my skills to create innovative and practical solutions.</p>
+  </article>
 
-    <article id="Skills-block">
-        <h1>Skills</h1>
-        <section id="Skills-item">
-             <h3>Languages and Skills</h3>
-             <ul>
-                 <li>C#</li>
-                  <li>HTML5, CSS3, BOOTSTRAP</li>
-                  <li>Visual Basics For Applications</li>
-                  <li>Git & GitHub</li>
-                  <li>SQL  Databases</li>
-                  <li>Static Web Design</li>
-                  <li>Website Deployment</li>
-              </ul>
-        </section>
-
-        <section id="Platforms">
-             <h3>Environments</h3>
-             <ul>
-                  <li>Visual Studio</li>
-                 <li>Visual Studio Code</li>
-                 <li>Git & GitHub</li>
-                 <li>SQL  Databases</li>
-                 <li>SQL Server Management Studio</li>
-                 <li>Figma</li>
-                 <li>Notepad++</li>
-                 <li>MS PowerBi</li>
-             </ul>            
-        </section>
-    </article>
-
-    <article>
-        <h1>Projects</h1>    
-        <section id ="Project-block">
-            <section id="Project-item">
-                <h3>Portfolio Website</h3>
-                <p>A personal portfolio website to showcase my projects and skills.</p>
-                <a href="https://github.com/22Boikutlo/Portfolio-website">View on GitHub</a>
-            </section>
-            <section id="Project-item">
-                <h3>Student Accomodation Application system</h3>
-                <p>The sytem pairs studdents based on relativity of course and year of study.</p>
-                <a href="https://github.com/22Boikutlo/Portfolio-website">View on GitHub</a>
-            </section>
-            <section id="Project-item">
-                <h3>Community Project</h3>
-                <p>Online Application system that allow students to supply info once and apply to all universities in South Africa</p>
-                <a href="https://github.com/22Boikutlo/Portfolio-website">View on GitHub</a>
-            </section>
-        </section>         
-    </article>
-       
-    <article id="Experience">
-        <h2>Experience</h2>
-        <section class="experience-block">
-            <section class="experience-item">
-              <h3>Employment</h3>
-                <h4>Computer Literacy Student Assistant</h4>
-               <h5>University of Free State</h5>
-                    <p>Guide students through MS officxe practicals
-                    <br/>August 2023 - Present
-                    </p>
-                    <a href="https://www.ufs.ac.za/natagri/departments-and-divisions/computer-science-and-informatics-university-of-the-free-state-ufs-home">Visit Organisation Page</a>                    
-            </section>
-    
-            <section class="experience-item">
-               <h3>Volunteer Activities</h3>
-                <h4>Charitable Growth Organisation</h4>
-                <h5>University of Free State - KOVSIE ACT</h5>
-                    <p>Guide students through MS office practicals
-                        <br/>May 2022 - August 2023
-                    </p>
-                    <a href="https://www.facebook.com/p/Charitable-Growth-Organization-100079973903436/?locale=ka_GE">Visit Organisation Page</a>
-            </section>
-       </section>
-   </article>
-
-    <footer>
-        <ul>
-            <li><a href= "#index"> Go back to the Home</a></li>
-            <li><a href= "#About"> View About Boikutlo</a></li>
-            <li><a href= "#Contract"> Contact Information</a></li>
-            <li><a href= "#Skills"> This are some of my skills</a></li>
-            <li><a href= "#Project"> View my Projects</a></li>
-            <li><a href="#Experience">My Experience</a></li>        
+  <!-- Skills Section -->
+  <article class="Expertise" id="Skills">
+    <h2 class="nameKing">Skills</h2>
+    <article class="project-item">
+      <div>
+        <h3>Languages and Skills</h3>
+        <ul class="list-item">
+          <li>C#</li>
+          <li>HTML5, CSS3, BOOTSTRAP</li>
+          <li>Visual Basics for Applications</li>
+          <li>Git & GitHub</li>
+          <li>Web Design</li>
+          <li>Website Deployment</li>
         </ul>
-        @Boikutlo Networks, 2024
-    </footer>
+      </div>
+      <div>
+        <h3>Development Environment</h3>
+        <ul class="list-item">
+          <li>Visual Studio</li>
+          <li>Visual Studio Code</li>
+          <li>SQL Server Management Studio</li>
+          <li>Figma</li>
+          <li>Notepad++</li>
+          <li>Android Studio</li>
+          <li>Canva</li>
+        </ul>
+      </div>
+    </article>     
+  </article>
+
+  <!-- Projects Section -->
+  <article id="Project">
+    <h2>Projects</h2>    
+    <section class="project-block">
+      <section class="project-item">
+        <h3>Portfolio Website</h3>
+        <p>A personal portfolio website to showcase my projects and skills.</p>
+        <a href="https://github.com/22Boikutlo/Portfolio-website"><button>View on GitHub</button></a>
+      </section>
+      <section class="project-item">
+        <h3>Student Application System</h3>
+        <p>The system collects students' relative information to aid them in applying to tertiary institutions.</p>
+        <a href="https://github.com/22Boikutlo/Portfolio-website"><button>View on GitHub</button></a>
+      </section>
+      <section class="project-item">
+        <h3>Community Project</h3>
+        <p>An online application system that allows students to apply to all universities in South Africa with a single submission.</p>
+        <a href="https://github.com/22Boikutlo/Portfolio-website"><button>View on GitHub</button></a>
+      </section>
+      <section class="project-item">
+        <h3>Lepulane Peba Plumbing Services</h3>
+        <p>A website for a plumbing business.</p>
+        <a href="https://github.com/22Boikutlo/Portfolio-website"><button>View on GitHub</button></a>
+      </section>
+    </section>
+  </article>
+
+  <!-- Experience Section -->
+  <article id="Experience">
+    <h2>Experience</h2>
+    <section class="project-block">
+      <section class="project-item">
+        <h3>Employment</h3>
+        <h4>Computer Literacy Assistant</h4>
+        <h5>University of Free State</h5>
+        <p>Guided students through MS Office practicals.</p>
+        <strong>August 2023 - October 2024</strong>
+      </section>
+      <section class="project-item">
+        <h3>Volunteer Activities</h3>
+        <h4>KOVSIE ACT</h4>
+        <h5>University of Free State</h5>
+        <p>Volunteered to work at the campus gardens, which donated their harvests to non-funded students.</p>
+        <strong>May 2022 - July 2023</strong>
+      </section>
+    </section>
+  </article>
+
+  <!-- Contact Information -->
+  <article id="Contact">
+    <h2>Contact Information</h2>
+    <ul class="list-item">
+      <li>Cellphone Number: 072 873 5988</li>
+      <li>Email: <a href="mailto:boikutlos@gmail.com">boikutlos@gmail.com</a></li>
+      <li><a href="https://www.linkedin.com/in/boikutlo-shaun-rampora-7b7914167">LinkedIn</a></li>
+    </ul>         
+  </article>
+
+  <!-- Footer -->
+  <footer>
+    <div class="siteMapFoot">
+      <ul>
+        <li><a href="#Profile">Go back to Home</a></li>
+        <li><a href="#About">View About Boikutlo</a></li>
+        <li><a href="#Contact">Contact Information</a></li>
+        <li><a href="#Skills">These are some of my skills</a></li>
+        <li><a href="#Project">View my Projects</a></li>
+        <li><a href="#Experience">My Experience</a></li>
+      </ul>
+    </div>
+    &copy; Boikutlo Networks, 2024
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
